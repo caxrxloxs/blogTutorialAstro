@@ -1,0 +1,18 @@
+---
+//usar componente Social dentro de componente footer
+const { platform, username } = Astro.props; // se crean 2 variables para recibir valores
+---
+
+<!-- Se crea el enlace concatenando las variables
+Siguiente paso en archivo footer -->
+<a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+
+
+<style>
+  a {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #4c1d95;
+    text-decoration: none;
+  }
+</style>
