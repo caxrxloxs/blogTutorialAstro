@@ -39,7 +39,7 @@ h1 {
   top: 5rem;
   left: 48px;
   background-color: #ff9776;
-  display: none;
+  display: none; /*se mantiene no visible si el tama;o es mayor a 636px*/
   margin: 0;
 }
 
@@ -62,6 +62,7 @@ h1 {
   display: unset;
 }
 
+
 @media screen and (min-width: 636px) {
   .nav-links {
     margin-left: 5em;
@@ -78,4 +79,7 @@ h1 {
   .hamburger {
     display: none;
   }
+
 }
+
+
